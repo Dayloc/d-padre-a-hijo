@@ -1,0 +1,14 @@
+<h1>Soy el padre</h1>
+<div class="row ">
+  <div class="col">
+    <app-hijo2 [personasHijos]="personas"
+               (onDelete)="onDeletePersona($event)"></app-hijo2>
+
+  </div>
+  <div class="col d-flex align-content-center">
+
+    <app-hijo (onNewPersona)="onNewPersona($event)" ></app-hijo>
+
+  </div>
+
+</div>

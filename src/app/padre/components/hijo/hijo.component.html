@@ -1,0 +1,29 @@
+
+
+<h2 class="text-bg-primary align-self-center">Agreguemos a la lista</h2>
+
+
+<form id="add-item-form " (ngSubmit)="agregarPersona()" >
+  <div class="row">
+
+    <div class="col">
+      <input type="text"
+      [(ngModel)]="personasAgregar.name"
+      name="name"
+      placeholder="Nombre" required>
+
+    </div>
+    <div class="col">
+      <input
+       type="text"
+       [(ngModel)]="personasAgregar.age"
+       name="age"
+       placeholder="edad" required>
+
+    </div>
+    {{personasAgregar | json}}
+  </div>
+
+
+  <button type="submit" class="btn btn-primary m-2"   >Agregar</button>
+</form>

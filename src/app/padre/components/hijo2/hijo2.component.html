@@ -1,0 +1,16 @@
+<h2 class="text-bg-primary align-self-center">Soy el hijo que tiene la lista</h2>
+<div>
+<ul class="list-group">
+  <li class="list-group-item d-flex justify-content-between " *ngFor="let item of personasHijos; let index=index">
+    <div>
+      <span class="text-bg-darck">Soy  {{item.name}} y tengo   {{item.age}} años.
+      </span>
+
+    </div>
+
+    <button class="btn btn-danger ms-5" (click)="onDeletePersonaje(index)">X</button>
+
+  </li>
+</ul>
+
+</div>
